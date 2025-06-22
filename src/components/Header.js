@@ -10,12 +10,12 @@ function Header() {
                 <div className="row g-0 align-items-center flex-column-reverse flex-md-row">
                     <div className="col-md-6 p-5 mt-lg-5">
                         <h1 className="display-5 animated fadeIn mb-4">
-                            Find A <span className="text-primary">Perfect Property</span> To Live peacefully
+                            Find A <span style={{color: '#52AA5E'}}>Perfect Property</span> To Live peacefully
                         </h1>
                         <p className="animated fadeIn mb-4 pb-2">
                             Choose your favorite & desiered living space in your favorite city. Just Select and search to find your perfect Property.
                         </p>
-                        <a href="" className="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
+                        <a href="" style={{background: '#52AA5E', color: '#fff'}} className="btn py-3 px-5 me-3 animated fadeIn">Get Started</a>
                     </div>
                     <div className="col-md-6 animated fadeIn">
                     <div id="headerCarousel" className="carousel slide" data-bs-ride="carousel">

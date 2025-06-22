@@ -64,7 +64,7 @@ function PropertyDetails() {
                         <h1 className="pt-5">Villa with Amazing View</h1>
                     </div>
                     <div className="col-6 text-end">
-                        <h1 className="pt-5 text-primary">5.500.000 €</h1>
+                        <h1 style={{color: '#52AA5E'}} className="pt-5">5.500.000 €</h1>
                     </div>
                 </div>
                 <p><i className="bi bi-geo-alt"></i> Calle de Lagasca, Madrid, Castellana</p>
@@ -155,13 +155,13 @@ function PropertyDetails() {
                                     <strong>Address:</strong> Calle de Lagasca
                                 </div>
                                 <div className="listing_detail wpresidence-detail-city col-md-4">
-                                    <strong>City:</strong> <a href="https://madrid.wpresidence.net/property_city/madrid/" rel="tag">Madrid</a>
+                                    <strong>City:</strong> <a style={{color: '#52AA5E', textDecoration: 'none'}} href="https://madrid.wpresidence.net/property_city/madrid/" rel="tag">Madrid</a>
                                 </div>
                                 <div className="listing_detail wpresidence-detail-area col-md-4">
-                                    <strong>Area:</strong> <a href="https://madrid.wpresidence.net/property_area/castellana/" rel="tag">Castellana</a>
+                                    <strong>Area:</strong> <a style={{color: '#52AA5E', textDecoration: 'none'}} href="https://madrid.wpresidence.net/property_area/castellana/" rel="tag">Castellana</a>
                                 </div>
                                 <div className="listing_detail wpresidence-detail-state-county col-md-4">
-                                    <strong>State/County:</strong> <a href="https://madrid.wpresidence.net/property_county_state/comunidad-de-madrid/" rel="tag">Comunidad de Madrid</a>
+                                    <strong>State/County:</strong> <a style={{color: '#52AA5E', textDecoration: 'none'}} href="https://madrid.wpresidence.net/property_county_state/comunidad-de-madrid/" rel="tag">Comunidad de Madrid</a>
                                 </div>
                                 <div className="listing_detail wpresidence-detail-zip col-md-4">
                                     <strong>Zip:</strong> 28006
@@ -349,7 +349,7 @@ function PropertyDetails() {
                         {/* <!-- Reviews --> */}
                          <div className="card p-3">
                             <div className="card-body">
-                                <div className="bg-" id="property_reviews_area"><h3>Reviews</h3>You need to <span className="text-primary"><b>login</b></span> in order to post a review</div>
+                                <div className="bg-" id="property_reviews_area"><h3>Reviews</h3>You need to <span  style={{color: '#52AA5E'}}><b>login</b></span> in order to post a review</div>
                             </div>
                          </div>
                         
@@ -365,18 +365,18 @@ function PropertyDetails() {
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
                                                 <a href=""><img className="img-fluid" src={IMG1} alt="" /></a>
-                                                <div className="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
-                                                <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
+                                                <div style={{background: '#52AA5E', color: '#fff'}} className="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                                <div style={{color: '#52AA5E'}} className="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
                                             </div>
                                             <div className="p-4 pb-0">
-                                                <h5 className="text-primary mb-3">৳5999</h5>
-                                                <a className="d-block h5 mb-2" href="">Property Title </a>
-                                                <p><i className="fa fa-map-marker-alt text-primary me-2"></i>Dhanmondi 26/A, Bangladesh</p>
+                                                <h5 style={{color: '#52AA5E', fontWeight: '700'}} className="mb-3">৳5999</h5>
+                                                <a style={{color: '#000', textDecoration: 'none'}} className="d-block h5 mb-2" href="">Property Title </a>
+                                                <p><i style={{color: '#52AA5E'}} className="fa fa-map-marker-alt me-2"></i>Dhanmondi 26/A, Bangladesh</p>
                                             </div>
                                             <div className="d-flex border-top">
-                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                                <small className="flex-fill text-center py-2"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-ruler-combined me-2" style={{color: '#52AA5E'}}></i>1000 Sqft</small>
+                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-bed me-2" style={{color: '#52AA5E'}}></i>3 Bed</small>
+                                                <small className="flex-fill text-center py-2"><i className="fa fa-bath me-2" style={{color: '#52AA5E'}}></i>2 Bath</small>
                                             </div>
                                         </div>
                                     </div>
@@ -385,38 +385,38 @@ function PropertyDetails() {
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
                                                 <a href=""><img className="img-fluid" src={IMG4} alt="" /></a>
-                                                <div className="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
-                                                <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
+                                                <div style={{background: '#52AA5E', color: '#fff'}} className="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                                <div style={{color: '#52AA5E'}} className="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
                                             </div>
                                             <div className="p-4 pb-0">
-                                                <h5 className="text-primary mb-3">৳5999</h5>
-                                                <a className="d-block h5 mb-2" href="">Property Title </a>
-                                                <p><i className="fa fa-map-marker-alt text-primary me-2"></i>Dhanmondi 26/A, Bangladesh</p>
+                                                <h5 style={{color: '#52AA5E', fontWeight: '700'}} className="mb-3">৳5999</h5>
+                                                <a style={{color: '#000', textDecoration: 'none'}} className="d-block h5 mb-2" href="">Property Title </a>
+                                                <p><i style={{color: '#52AA5E'}} className="fa fa-map-marker-alt me-2"></i>Dhanmondi 26/A, Bangladesh</p>
                                             </div>
                                             <div className="d-flex border-top">
-                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                                <small className="flex-fill text-center py-2"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-ruler-combined me-2" style={{color: '#52AA5E'}}></i>1000 Sqft</small>
+                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-bed me-2" style={{color: '#52AA5E'}}></i>3 Bed</small>
+                                                <small className="flex-fill text-center py-2"><i className="fa fa-bath me-2" style={{color: '#52AA5E'}}></i>2 Bath</small>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.1s"  style={{visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInUp'}}>
+                                    <div className="col-sm-6 col-md-4 wow fadeInUp" data-wow-delay="0.1s" style={{visibility: 'visible', animationDelay: '0.1s', animationName: 'fadeInUp'}}>
                                         <div className="property-item rounded overflow-hidden">
                                             <div className="position-relative overflow-hidden">
                                                 <a href=""><img className="img-fluid" src={IMG3} alt="" /></a>
-                                                <div className="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
-                                                <div className="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
+                                                <div style={{background: '#52AA5E', color: '#fff'}} className="rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div>
+                                                <div style={{color: '#52AA5E'}} className="bg-white rounded-top position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Appartment</div>
                                             </div>
                                             <div className="p-4 pb-0">
-                                                <h5 className="text-primary mb-3">৳5999</h5>
-                                                <a className="d-block h5 mb-2" href="">Property Title </a>
-                                                <p><i className="fa fa-map-marker-alt text-primary me-2"></i>Dhanmondi 26/A, Bangladesh</p>
+                                                <h5 style={{color: '#52AA5E', fontWeight: '700'}} className="mb-3">৳5999</h5>
+                                                <a style={{color: '#000', textDecoration: 'none'}} className="d-block h5 mb-2" href="">Property Title </a>
+                                                <p><i style={{color: '#52AA5E'}} className="fa fa-map-marker-alt me-2"></i>Dhanmondi 26/A, Bangladesh</p>
                                             </div>
                                             <div className="d-flex border-top">
-                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-ruler-combined text-primary me-2"></i>1000 Sqft</small>
-                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-bed text-primary me-2"></i>3 Bed</small>
-                                                <small className="flex-fill text-center py-2"><i className="fa fa-bath text-primary me-2"></i>2 Bath</small>
+                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-ruler-combined me-2" style={{color: '#52AA5E'}}></i>1000 Sqft</small>
+                                                <small className="flex-fill text-center border-end py-2"><i className="fa fa-bed me-2" style={{color: '#52AA5E'}}></i>3 Bed</small>
+                                                <small className="flex-fill text-center py-2"><i className="fa fa-bath me-2" style={{color: '#52AA5E'}}></i>2 Bath</small>
                                             </div>
                                         </div>
                                     </div>
@@ -441,7 +441,7 @@ function PropertyDetails() {
                                     </div>
                                     <div className="col-md-9">
                                         <h4>Fardin Ahmed</h4>
-                                        <h6 className="text-primary">Property Agent</h6>
+                                        <h6 style={{color: '#52AA5E'}}>Property Agent</h6>
                                     </div>
                                 </div>
                                 <br />
@@ -462,16 +462,16 @@ function PropertyDetails() {
                                         <label for="description" className="form-label">Description</label>
                                         <textarea className="py-3 form-control" id="description" rows="3" placeholder="Enter your message"></textarea>
                                     </div>
-                                    <button type="submit" className="py-3 btn btn-primary w-100">Send Email</button>
+                                    <button style={{background: '#52AA5E', color: '#fff'}} type="submit" className="py-3 btn w-100">Send Email</button>
                                 </form>
                                 <div className="mt-3 d-flex row">
                                     <div className="col-6">
-                                        <a href="tel:+1234567890" className="w-100 py-3 btn btn-outline-primary">
+                                        <a style={{border: '1px solid #52AA5E'}} href="tel:+1234567890" className="w-100 py-3 btn">
                                             <i className="bi bi-telephone"></i> Call
                                         </a>
                                     </div>
                                     <div className="col-6">
-                                        <a href="https://wa.me/1234567890" className="w-100 py-3 btn btn-outline-success">
+                                        <a style={{border: '1px solid #52AA5E'}} href="https://wa.me/1234567890" className="w-100 py-3 btn">
                                             <i className="bi bi-whatsapp"></i> WhatsApp
                                         </a>
                                     </div>
@@ -540,7 +540,7 @@ function PropertyDetails() {
                                         </div>
                                 
                                         {/* <!-- Submit Button --> */}
-                                        <button type="submit" className="py-3 btn btn-primary w-100">Search</button>
+                                        <button style={{background: '#52AA5E', color: '#fff'}} type="submit" className="py-3 btn w-100">Search</button>
                                     </form>
                                 </div>
                             </div>
@@ -582,7 +582,7 @@ function PropertyDetails() {
                                         <div className="mb-3">
                                             <label className="form-label">Tour Type</label>
                                             <div className="d-flex">
-                                                <button type="button" className="btn btn-outline-primary me-2">
+                                                <button style={{border: '1px solid #52AA5E'}} type="button" className="btn me-2">
                                                     <i className="bi bi-person"></i> In Person
                                                 </button>
                                                 <button type="button" className="btn btn-outline-secondary">
@@ -613,12 +613,12 @@ function PropertyDetails() {
                                         <div className="form-check mt-3">
                                             <input type="checkbox" className="form-check-input" id="wpestate_agree_gdpr_schedule_section" name="wpestate_agree_gdpr" />
                                             <label className="form-check-label" for="wpestate_agree_gdpr_schedule_section">
-                                                I consent to the <a target="_blank" href="https://madrid.wpresidence.net/">GDPR Terms</a>
+                                                I consent to the <a style={{color: '#52AA5E', textDecoration: 'none'}} target="_blank" href="https://madrid.wpresidence.net/">GDPR Terms</a>
                                             </label>
                                         </div>
                                 
                                         
-                                        <button type="submit" className="btn btn-primary mt-3">Send Email</button>
+                                        <button type="submit" style={{background: '#52AA5E', color: '#fff'}} className="btn mt-3">Send Email</button>
                                     </form>
                                 </div>
                             </div>

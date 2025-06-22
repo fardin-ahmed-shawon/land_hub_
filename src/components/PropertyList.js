@@ -16,13 +16,13 @@ function PropertyList() {
                     <div className="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
                         <ul className="nav nav-pills d-inline-flex justify-content-end mb-5">
                             <li className="nav-item me-2">
-                                <a className="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Featured</a>
+                                <a style={{background: '#52AA5E', color: '#fff'}} className="btn active" data-bs-toggle="pill" href="#tab-1">Featured</a>
                             </li>
                             <li className="nav-item me-2">
-                                <a className="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">For Sell</a>
+                                <a style={{border: '1px solid #52AA5E', color: '#000'}} className="btn" data-bs-toggle="pill" href="#tab-2">For Sell</a>
                             </li>
                             <li className="nav-item me-0">
-                                <a className="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">For Rent</a>
+                                <a style={{border: '1px solid #52AA5E', color: '#000'}}  className="btn" data-bs-toggle="pill" href="#tab-3">For Rent</a>
                             </li>
                         </ul>
                     </div>

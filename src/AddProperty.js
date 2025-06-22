@@ -249,7 +249,7 @@ function AddProperty() {
                                     </div>
                                     {/*<!-- Submit Button --> */}
                                     <div className="col-md-12">
-                                        <button type="submit" className="btn btn-primary py-3 px-5"><b>Submit Property</b></button>
+                                        <button style={{background: '#52AA5E', color: '#fff'}} type="submit" className="btn py-3 px-5"><b>Submit Property</b></button>
                                     </div>
                                 </div>
                             </div>

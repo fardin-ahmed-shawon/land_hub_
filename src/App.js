@@ -15,6 +15,7 @@ import AboutInfo from './AboutInfo';
 import Contact from './Contact';
 import Agents from './Agents';
 import Clients from './Clients';
+import PropertyType from './PropertyType';
 import Properties from './Properties';
 import SearchProperties from './SearchProperties';
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/agents" element={<Agents />} />
           <Route path="/clients" element={<Clients />} />
           <Route path="/properties" element={<Properties />} />
+          <Route path="/property-type" element={<PropertyType />} />
           <Route path="/search-properties" element={<SearchProperties />} />
         </Routes>
       </Router>
