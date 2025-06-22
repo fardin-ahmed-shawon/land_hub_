@@ -15,6 +15,7 @@
   background-color: #52aa5ed6;
   column-gap: 30px;
 } */
+
 .form {
   position: absolute;
   max-width: 430px;
@@ -22,6 +23,7 @@
   padding: 30px;
   border-radius: 6px;
   background: #FFF;
+  border: 2px solid #52aa5ed6;
 }
 .form.signup {
   opacity: 0;

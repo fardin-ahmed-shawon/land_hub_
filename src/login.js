@@ -11,7 +11,7 @@ const container = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '#52aa5ed6',
+  // backgroundColor: '#52aa5ed6',
   columnGap: '30px',
 };
 

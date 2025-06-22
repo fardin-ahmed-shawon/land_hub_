@@ -4,7 +4,7 @@ function PropertyCard(props) {
     const { index, title, detailsLink, thumbnailImage, status, type, currency, price, location, size, bedrooms, bathrooms } = props;
     return (
       <>
-          <div className="col-sm-6 col-lg-3 col-md-4" key={index}>
+          <div className="col-sm-6 col-lg-3 col-md-4 g-4" key={index}>
               <div className="property-item rounded overflow-hidden">
                   <div className="position-relative overflow-hidden">
                       <Link to='/property-details'>
