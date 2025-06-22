@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function AddProperty() {
   return (
-    <>
+    <div className="container-xxl bg-white p-0">
       <Navbar />
       <Header />
       <SearchBar />
@@ -300,7 +300,7 @@ function AddProperty() {
         </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

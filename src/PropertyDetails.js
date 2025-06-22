@@ -16,7 +16,7 @@ import AGENTIMG from './img/team-1.jpg';
 
 function PropertyDetails() {
   return (
-    <>
+    <div className="container-xxl bg-white p-0">
       <Navbar />
       <Header />
       <SearchBar />
@@ -631,7 +631,7 @@ function PropertyDetails() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 
