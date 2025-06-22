@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import './css/style.css';
 import './css/bootstrap.min.css';
 
@@ -11,22 +13,29 @@ import PropertyDetails from './PropertyDetails';
 import AddProperty from './AddProperty';
 import AboutInfo from './AboutInfo';
 import Contact from './Contact';
-import Agents from './Agents'
+import Agents from './Agents';
+import Clients from './Clients';
 import Properties from './Properties';
 import SearchProperties from './SearchProperties';
+
 
 function App() {
   return (
     <>
-        {/* <Home /> */}
-        {/* <PropertyDetails /> */}
-        {/* <AddProperty /> */}
-        {/* <AboutInfo /> */}
-        {/* <Contact /> */}
-        {/* <Login /> */}
-        {/* <Agents /> */}
-        {/* <Properties /> */}
-        <SearchProperties />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/property-details" element={<PropertyDetails />} />
+          <Route path="/add-property" element={<AddProperty />} />
+          <Route path="/about-info" element={<AboutInfo />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/agents" element={<Agents />} />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/properties" element={<Properties />} />
+          <Route path="/search-properties" element={<SearchProperties />} />
+        </Routes>
+      </Router>
     </>
   );
 }

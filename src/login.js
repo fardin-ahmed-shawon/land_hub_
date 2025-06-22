@@ -3,6 +3,7 @@ import LOGO from './img/logo.png';
 import './css/style.css';
 import './css/login.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const container = {
   height: '100vh',
@@ -33,9 +34,13 @@ function Login() {
         <div className="form login">
           <div className="form-content">
             <div className="logo" style={{ textAlign: 'center', marginBottom: '50px' }}>
-              <a href="index.html">
+            
+            <Link to='/'>
+              <a href="">
                 <img style={{ width: '150px' }} src={LOGO} alt="" />
               </a>
+            </Link>
+
             </div>
             <header>Login</header>
             <form action="#">
@@ -75,9 +80,13 @@ function Login() {
         <div className="form signup">
           <div className="form-content">
             <div className="logo" style={{ textAlign: 'center', marginBottom: '50px' }}>
-              <a href="index.html">
+
+            <Link to='/'>
+              <a href="">
                 <img style={{ width: '150px' }} src={LOGO} alt="" />
               </a>
+            </Link>  
+
             </div>
             <header>Signup</header>
             <form action="#">
