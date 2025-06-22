@@ -18,13 +18,23 @@ function Header() {
                         <a href="" className="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
                     </div>
                     <div className="col-md-6 animated fadeIn">
-                        <div className="owl-carousel header-carousel">
-                            <div className="owl-carousel-item">
-                                <img className="img-fluid" src={Slider1} alt="" />
+                    <div id="headerCarousel" className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active">
+                                    <img src={Slider1} className="d-block w-100 img-fluid" alt="Slide 1" />
+                                </div>
+                                <div className="carousel-item">
+                                    <img src={Slider2} className="d-block w-100 img-fluid" alt="Slide 2" />
+                                </div>
                             </div>
-                            <div className="owl-carousel-item">
-                                <img className="img-fluid" src={Slider2} alt="" />
-                            </div>
+                            <button className="carousel-control-prev" type="button" data-bs-target="#headerCarousel" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next" type="button" data-bs-target="#headerCarousel" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
