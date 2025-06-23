@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import Header from './components/Header';
+import HeaderTwo from './components/HeaderTwo';
 import SearchBar from './components/SearchBar';
 import Category from './components/Category'
 import Testimonial from './components/Testimonial';
@@ -9,7 +9,7 @@ function PropertyType() {
     return (
       <div className="container-xxl bg-white p-0">
         <Navbar />
-        <Header />
+        <HeaderTwo pageTitle="Property Types" />
         <SearchBar />
         <Category />
         <Testimonial />
