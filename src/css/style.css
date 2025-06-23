@@ -6,6 +6,10 @@
     --dark: #0E2E50;
 }
 
+#root, html {
+    background: #52aa5e17;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
