@@ -59,13 +59,13 @@ function Category() {
                             key={index}
                             variants={itemVariants}
                         >
-                            <a style={{ textDecoration: 'none' }} className="cat-item d-block bg-light text-center rounded p-3" href="">
-                                <div className="rounded p-4">
+                            <a style={{ textDecoration: 'none' }} className="bg-dark cat-item d-block bg-light text-center rounded p-3" href="">
+                                <div className="bg-dark rounded p-4">
                                     <div className="icon mb-3">
                                         <img className="img-fluid" src={category.img} alt="Icon" />
                                     </div>
-                                    <h6 style={{ color: '#000' }}>{category.title}</h6>
-                                    <span style={{ color: '#52AA5E' }}>{category.properties}</span>
+                                    <h6 className='bg-transparent ' style={{ color: '#fff' }}>{category.title}</h6>
+                                    <span className='bg-transparent ' style={{ color: '#52AA5E' }}>{category.properties}</span>
                                 </div>
                             </a>
                         </motion.div>

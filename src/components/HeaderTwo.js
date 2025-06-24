@@ -4,7 +4,7 @@ import Slider from '../img/header.jpg';
 function HeaderTwo(props) {
   return (
     <>
-      <div className="container-fluid header bg-white p-0">
+      <div className="container-fluid header p-0">
             <div className="row g-0 align-items-center flex-column-reverse flex-md-row">
                 <div className="col-md-6 p-5 mt-lg-5">
                         <motion.h1
@@ -19,7 +19,7 @@ function HeaderTwo(props) {
                         <ol className="breadcrumb text-uppercase">
                             <li className="breadcrumb-item">Home</li>
                             <li className="breadcrumb-item">Pages</li>
-                            <li className="breadcrumb-item text-body active" aria-current="page">{props.pageTitle}</li>
+                            <li className="breadcrumb-item text-light active" aria-current="page">{props.pageTitle}</li>
                         </ol>
                     </nav>
                 </div>

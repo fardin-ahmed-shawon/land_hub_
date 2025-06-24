@@ -14,7 +14,7 @@ function PropertyCard(props) {
               viewport={{ once: true, amount: 0.3 }} // Trigger animation when 30% of the card is visible
               transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
           >
-              <div className="property-item rounded overflow-hidden">
+              <div className="bg-dark property-item rounded overflow-hidden">
                   <div className="position-relative overflow-hidden">
                       <Link to='/property-details'>
                           <motion.a
@@ -46,14 +46,14 @@ function PropertyCard(props) {
                           {type}
                       </motion.div>
                   </div>
-                  <div className="p-4 pb-0">
-                      <h5 style={{ color: '#52AA5E', fontWeight: '700' }} className="mb-3">
+                  <div className="bg-dark p-4 pb-0">
+                      <h5 style={{ color: '#52AA5E', fontWeight: '700' }} className="bg-dark mb-3">
                           {currency} {price}
                       </h5>
                       <Link style={{ textDecoration: 'none' }} to='/property-details'>
                           <motion.a
                               style={{ color: '#000', textDecoration: 'none' }}
-                              className="d-block h5 mb-2"
+                              className="bg-dark text-white d-block h5 mb-2"
                               href=""
                               whileHover={{ color: '#52AA5E' }} // Change text color on hover
                               transition={{ duration: 0.3 }}
@@ -61,21 +61,21 @@ function PropertyCard(props) {
                               {title}
                           </motion.a>
                       </Link>
-                      <p>
+                      <p className='bg-dark'>
                           <i style={{ color: '#52AA5E' }} className="fa fa-map-marker-alt me-2"></i>
                           {location}
                       </p>
                   </div>
                   <div className="d-flex border-top">
-                      <small className="flex-fill text-center border-end py-2">
+                      <small className="bg-dark flex-fill text-center border-end py-2">
                           <i style={{ color: '#52AA5E' }} className="fa fa-ruler-combined me-2"></i>
                           {size}
                       </small>
-                      <small className="flex-fill text-center border-end py-2">
+                      <small className="bg-dark flex-fill text-center border-end py-2">
                           <i style={{ color: '#52AA5E' }} className="fa fa-bed me-2"></i>
                           {bedrooms} Bed
                       </small>
-                      <small className="flex-fill text-center py-2">
+                      <small className="bg-dark flex-fill text-center py-2">
                           <i style={{ color: '#52AA5E' }} className="fa fa-bath me-2"></i>
                           {bathrooms} Bath
                       </small>

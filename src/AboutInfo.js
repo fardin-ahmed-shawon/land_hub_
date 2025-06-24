@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 function AboutInfo() {
     return (
-      <div className="container-xxl bg-white p-0">
+      <div className="container-xxl p-0">
         <Navbar />
         <HeaderTwo pageTitle="About" />
         <SearchBar />

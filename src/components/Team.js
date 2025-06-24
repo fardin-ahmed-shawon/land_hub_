@@ -50,7 +50,7 @@ function Team() {
             img: IMG3,
             name: "Smita Chowdhury",
             role: "Sales Executive",
-            description: "Smita Chowdhury is a sales executive with over 3 years of experience in the real estate sector. She is known for her exceptional customer service and dedication to helping clients find the perfect property."
+            description: "Smita Chowdhury is a sales executive with over 3 years of experience in the real estate sector. She is known for her exceptional customer service and dedication to helping clients find property."
         },
         {
             img: IMG4,
@@ -86,19 +86,19 @@ function Team() {
                             key={index}
                             variants={itemVariants}
                         >
-                            <div className="team-item rounded overflow-hidden">
-                                <div className="position-relative">
+                            <div className="bg-dark team-item rounded overflow-hidden">
+                                <div className="bg-dark position-relative">
                                     <img className="img-fluid" src={agent.img} alt={agent.name} />
-                                    <div className="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
-                                        <a className="btn btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                                        <a className="btn btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                                        <a className="btn btn-square mx-1" href="#"><i className="fab fa-instagram"></i></a>
+                                    <div className="bg-dark position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                        <a className="bg-dark btn btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
+                                        <a className="bg-dark btn btn-square mx-1" href="#"><i className="bg-dark fab fa-twitter"></i></a>
+                                        <a className="bg-dark btn btn-square mx-1" href="#"><i className="fab fa-instagram"></i></a>
                                     </div>
                                 </div>
-                                <div className="text-center p-4 mt-3">
-                                    <h5 className="fw-bold mb-0">{agent.name}</h5>
-                                    <small>{agent.role}</small>
-                                    <p>{agent.description}</p>
+                                <div className="bg-dark text-center p-4 mt-3">
+                                    <h5 className="bg-dark fw-bold mb-0">{agent.name}</h5>
+                                    <small className='bg-dark '>{agent.role}</small>
+                                    <p className='bg-dark '>{agent.description}</p>
                                 </div>
                             </div>
                         </motion.div>

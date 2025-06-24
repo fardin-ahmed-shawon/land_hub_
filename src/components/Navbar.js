@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from '../img/logo.png';
+import LOGODARK from '../img/logo-dark.png';
 
 function Navbar() {
     useEffect(() => {
@@ -24,10 +25,10 @@ function Navbar() {
     return (
       <>
         <div className="container-fluid nav-bar bg-transparent">
-            <nav className="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+            <nav className="bg-transparent navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <Link style={{ textDecoration: 'none' }} to="/">
                     <a href="" className="navbar-brand d-flex align-items-center text-center">
-                        <img className="img-fluid" src={LOGO} alt="Icon" style={{width: '180px'}} />
+                        <img className="img-fluid" src={LOGODARK} alt="Icon" style={{width: '180px'}} />
                     </a>
                 </Link> 
                 <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -36,13 +37,13 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto">
                         <Link style={{ textDecoration: 'none' }} to="/">
-                            <a href="" className="nav-item nav-link active">Home</a>
+                            <a href="" className="text-light nav-item nav-link active">Home</a>
                         </Link>
                         <Link style={{ textDecoration: 'none' }} to="/about-info">
-                            <a href="" className="nav-item nav-link">About</a>
+                            <a href="" className="text-light nav-item nav-link">About</a>
                         </Link>
                         <div className="nav-item dropdown">
-                            <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buy Property</a>
+                            <a href="#" className="text-light nav-link dropdown-toggle" data-bs-toggle="dropdown">Buy Property</a>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link style={{ textDecoration: 'none' }} to='/properties'>
                                     <a href="" className="dropdown-item">Land</a>
@@ -53,7 +54,7 @@ function Navbar() {
                             </div>
                         </div>
                         <div className="nav-item dropdown">
-                            <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sell Property</a>
+                            <a href="#" className="text-light nav-link dropdown-toggle" data-bs-toggle="dropdown">Sell Property</a>
                             <div className="dropdown-menu rounded-0 m-0">
                                 <Link style={{ textDecoration: 'none' }} to='/properties'>
                                     <a href="" className="dropdown-item">Land</a>
@@ -65,15 +66,15 @@ function Navbar() {
                         </div>
 
                         <Link style={{ textDecoration: 'none' }} to='/agents'>
-                            <a href="" className="nav-item nav-link">Agents</a>
+                            <a href="" className="text-light nav-item nav-link">Agents</a>
                         </Link>
 
                         <Link style={{ textDecoration: 'none' }} to='/property-type'>
-                            <a href="" className="nav-item nav-link">Property Type</a>
+                            <a href="" className="text-light nav-item nav-link">Property Type</a>
                         </Link>
 
                         <Link style={{ textDecoration: 'none' }} to='/contact'>
-                            <a href="" className="nav-item nav-link">Contact</a>
+                            <a href="" className="text-light nav-item nav-link">Contact</a>
                         </Link>
                     </div>
                     

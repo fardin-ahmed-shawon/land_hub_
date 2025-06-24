@@ -1,4 +1,5 @@
 import LOGO from './img/logo.png';
+import LOGODARK from './img/logo-dark.png';
 
 import './css/style.css';
 import './css/login.css';
@@ -37,7 +38,7 @@ function Login() {
             
             <Link to='/'>
               <a href="">
-                <img style={{ width: '150px' }} src={LOGO} alt="" />
+                <img style={{ width: '150px' }} src={LOGODARK} alt="" />
               </a>
             </Link>
 
@@ -83,7 +84,7 @@ function Login() {
 
             <Link to='/'>
               <a href="">
-                <img style={{ width: '150px' }} src={LOGO} alt="" />
+                <img style={{ width: '150px' }} src={LOGODARK} alt="" />
               </a>
             </Link>  
 

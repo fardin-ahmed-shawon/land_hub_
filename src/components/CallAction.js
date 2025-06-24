@@ -21,20 +21,20 @@ function CallAction() {
             variants={containerVariants}
         >
             <motion.div className="container" variants={childVariants}>
-                <motion.div className="bg-light rounded p-3" variants={childVariants}>
+                <motion.div className="bg-dark  rounded p-3" variants={childVariants}>
                     <motion.div
-                        className="bg-white rounded p-4"
+                        className="bg-dark rounded p-4"
                         style={{ border: '1px dashed #52AA5E' }}
                         variants={childVariants}
                     >
-                        <motion.div className="row g-5 align-items-center" variants={containerVariants}>
+                        <motion.div className="bg-dark row g-4 align-items-center" variants={containerVariants}>
                             <motion.div
-                                className="col-lg-6 wow fadeIn"
+                                className="bg-dark col-lg-6 wow fadeIn"
                                 data-wow-delay="0.1s"
                                 variants={childVariants}
                             >
                                 <motion.img
-                                    className="img-fluid rounded w-100"
+                                    className="bg-dark img-fluid rounded w-100"
                                     src={IMG}
                                     alt=""
                                     whileHover={{ scale: 1.05 }}
@@ -42,15 +42,15 @@ function CallAction() {
                                 />
                             </motion.div>
                             <motion.div
-                                className="col-lg-6 wow fadeIn"
+                                className="bg-dark col-lg-6 wow fadeIn"
                                 data-wow-delay="0.5s"
                                 variants={childVariants}
                             >
-                                <motion.div className="mb-4" variants={childVariants}>
-                                    <motion.h1 className="mb-3" variants={childVariants}>
+                                <motion.div className="bg-dark mb-4" variants={childVariants}>
+                                    <motion.h1 className="bg-dark mb-3" variants={childVariants}>
                                         Contact With Our Certified Agent
                                     </motion.h1>
-                                    <motion.p variants={childVariants}>
+                                    <motion.p variants={childVariants} className='bg-dark '>
                                         Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.
                                     </motion.p>
                                 </motion.div>
@@ -65,7 +65,7 @@ function CallAction() {
                                 </motion.a>
                                 <motion.a
                                     href=""
-                                    className="btn btn-dark py-3 px-4"
+                                    className="btn text-light py-3 px-4"
                                     whileHover={{ scale: 1.1, backgroundColor: '#333' }}
                                     transition={{ duration: 0.3 }}
                                 >

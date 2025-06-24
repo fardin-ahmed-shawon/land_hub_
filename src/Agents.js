@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 
 function Agents() {
     return (
-      <div className="container-xxl bg-white p-0">
+      <div className="container-xxl p-0">
         <Navbar />
         <HeaderTwo pageTitle="Agents" />
         <SearchBar />

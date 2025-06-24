@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function Contact() {
     return (
-      <div className="container-xxl bg-white p-0">
+      <div className="container-xxl p-0">
         <Navbar />
         <HeaderTwo pageTitle="Contact"/>
         <SearchBar />
@@ -21,32 +21,32 @@ function Contact() {
                     <div className="col-12">
                         <div className="row gy-4">
                             <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                                <div className="bg-light rounded p-3">
-                                    <div className="d-flex align-items-center bg-white rounded p-3" style={{border: '1px dashed #52AA5E'}}>
-                                        <div className="icon me-3" style={{width: '45px', height: '45px'}}>
+                                <div className="bg-dark rounded p-3">
+                                    <div className="bg-dark d-flex align-items-center bg-dark  rounded p-3" style={{border: '1px dashed #52AA5E'}}>
+                                        <div className="bg-dark icon me-3" style={{width: '45px', height: '45px'}}>
                                             <i style={{color: '#52AA5E'}} className="fa fa-map-marker-alt"></i>
                                         </div>
-                                        <span>Dhanmondi 26/A, Bangladesh</span>
+                                        <span className='bg-dark '>Dhanmondi 26/A, Bangladesh</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                                <div className="bg-light rounded p-3">
-                                    <div className="d-flex align-items-center bg-white rounded p-3" style={{border: '1px dashed #52AA5E'}}>
-                                        <div className="icon me-3" style={{width: '45px', height: '45px'}}>
+                                <div className="bg-dark  rounded p-3">
+                                    <div className="d-flex align-items-center bg-dark  rounded p-3" style={{border: '1px dashed #52AA5E'}}>
+                                        <div className="bg-dark icon me-3" style={{width: '45px', height: '45px'}}>
                                             <i style={{color: '#52AA5E'}} className="fa fa-envelope-open"></i>
                                         </div>
-                                        <span>easystay@gmail.com</span>
+                                        <span className='bg-dark '>easystay@gmail.com</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                                <div className="bg-light rounded p-3">
-                                    <div className="d-flex align-items-center bg-white rounded p-3" style={{border: '1px dashed #52AA5E'}}>
-                                        <div className="icon me-3" style={{width: '45px', height: '45px'}}>
+                                <div className="bg-dark rounded p-3">
+                                    <div className="bg-dark d-flex align-items-center bg-dark  rounded p-3" style={{border: '1px dashed #52AA5E'}}>
+                                        <div className="bg-dark icon me-3" style={{width: '45px', height: '45px'}}>
                                             <i style={{color: '#52AA5E'}} className="fa fa-phone-alt"></i>
                                         </div>
-                                        <span>+88019XXXXXXXX</span>
+                                        <span className='bg-dark '>+88019XXXXXXXX</span>
                                     </div>
                                 </div>
                             </div>

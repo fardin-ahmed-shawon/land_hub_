@@ -1,14 +1,10 @@
 /********** Template CSS **********/
 :root {
     --primary: #52AA5E;
-    --secondary: #52AA5E;
     --light: #EFFDF5;
-    --dark: #0E2E50;
+    --dark: #000000e3;
 }
 
-#root, html {
-    background: #52aa5e17;
-}
 
 .back-to-top {
     position: fixed;
@@ -450,3 +446,23 @@
 .container-xxl, .container {
     max-width: 1920px !important;
 }
+
+
+/* dark theme start */
+#root, html, * {
+    color: var(--light);
+    background: var(--dark);
+}
+
+
+b, i, .navbar, .nav-item {
+    background: transparent;
+}
+
+.navbar-nav .nav-item .nav-link {
+    background: transparent;
+    color: var(--light);
+}
+/* end */
+
+

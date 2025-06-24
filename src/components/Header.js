@@ -7,18 +7,18 @@ function Header() {
 
     return (
         <>
-            <div className="container-fluid header bg-white p-0">
-                <div className="row g-0 align-items-center flex-column-reverse flex-md-row">
+            <div className="container-fluid header p-0">
+                <div className="bg-transparent row g-0 align-items-center flex-column-reverse flex-md-row">
                     <div className="col-md-6 p-5 mt-lg-5">
                         <motion.h1
-                            className="display-5 mb-4"
+                            className="bg-transparent display-5 mb-4"
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1 }}
                         >
-                            Find A <span style={{ color: '#52AA5E' }}>Perfect Property</span> To Live peacefully
+                            Find A <span className='bg-transparent' style={{ color: '#52AA5E' }}>Perfect Property</span> To Live peacefully
                         </motion.h1>
-                        <p className="animated fadeIn mb-4 pb-2">
+                        <p className="bg-transparent animated fadeIn mb-4 pb-2">
                             Choose your favorite & desiered living space in your favorite city. Just Select and search to find your perfect Property.
                         </p>
                         <a href="" style={{background: '#52AA5E', color: '#fff'}} className="btn py-3 px-5 me-3 animated fadeIn">Get Started</a>

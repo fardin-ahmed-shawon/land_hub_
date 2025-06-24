@@ -22,7 +22,7 @@
   width: 100%;
   padding: 30px;
   border-radius: 6px;
-  background: #FFF;
+  background: #000000;
   border: 2px solid #52aa5ed6;
 }
 .form.signup {
@@ -40,7 +40,7 @@
 header {
   font-size: 28px;
   font-weight: 600;
-  color: #232836;
+  color: #ffffff;
   text-align: center;
 }
 form {
@@ -97,7 +97,7 @@ form {
 .form-link a {
   font-size: 14px;
   font-weight: 400;
-  color: #232836;
+  color: #ffffff;
 }
 .form a {
   color: #52AA5E;

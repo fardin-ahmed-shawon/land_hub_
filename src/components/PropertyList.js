@@ -19,10 +19,10 @@ function PropertyList() {
                                 <a style={{background: '#52AA5E', color: '#fff'}} className="btn active" data-bs-toggle="pill" href="#tab-1">Featured</a>
                             </li>
                             <li className="nav-item me-2">
-                                <a style={{border: '1px solid #52AA5E', color: '#000'}} className="btn" data-bs-toggle="pill" href="#tab-2">For Sell</a>
+                                <a style={{border: '1px solid #52AA5E', color: '#000'}} className="btn btn-dark text-white" data-bs-toggle="pill" href="#tab-2">For Sell</a>
                             </li>
                             <li className="nav-item me-0">
-                                <a style={{border: '1px solid #52AA5E', color: '#000'}}  className="btn" data-bs-toggle="pill" href="#tab-3">For Rent</a>
+                                <a style={{border: '1px solid #52AA5E', color: '#000'}}  className="btn btn-dark text-white" data-bs-toggle="pill" href="#tab-3">For Rent</a>
                             </li>
                         </ul>
                     </div>

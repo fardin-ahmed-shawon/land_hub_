@@ -5,15 +5,15 @@ import Footer from './components/Footer';
 
 function AddProperty() {
   return (
-    <div className="container-xxl bg-white p-0">
+    <div className="container-xxl p-0">
       <Navbar />
       <HeaderTwo pageTitle="Add Property" />
       <SearchBar />
       
       <div className="container-xxl py-5">
-            <div className="card m-auto" style={{maxWidth: '1700px'}}>
+            <div className="bg-transparent card m-auto" style={{maxWidth: '1700px'}}>
                 <div className="card-body p-2">
-                    <h2 style={{padding: '30px', paddingBottom: '0'}}>Property Details</h2>
+                    <h2 className='text-white' style={{padding: '30px', paddingBottom: '0'}}>Property Details</h2>
                 </div>
                 <hr style={{border: '5px solid #52AA5E'}} />
                 <div style={{padding: '30px'}} className="card-body">
