@@ -1,10 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from '../img/logo.png';
 import FAVICON from '../img/icon.png';
 import LOGODARK from '../img/logo-dark.png';
 
 function Navbar() {
+    const [light, setLight] = useState(() => {
+        const storedLight = localStorage.getItem('light');
+        return storedLight ? parseInt(storedLight, 10) : 1; // Default to 1 if no value in localStorage
+    });
+
     useEffect(() => {
         const handleScroll = () => {
             const navbar = document.querySelector('.nav-bar');
@@ -22,6 +27,13 @@ function Navbar() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const toggleLightMode = () => {
+        const newLight = light === 1 ? 0 : 1; // Toggle between 1 and 0
+        setLight(newLight);
+        localStorage.setItem('light', newLight); // Save to localStorage
+        window.location.reload(); // Reload to apply changes dynamically
+    };
 
     return (
       <>
@@ -83,8 +95,11 @@ function Navbar() {
                     </div>
 
                     <div>
-                        <i style={{cursor: 'pointer'}} class="px-3 bi bi-moon"></i>
-                        {/* <i style={{cursor: 'pointer'}} class="px-3 bi bi-brightness-high"></i> */}
+                        <i 
+                            style={{cursor: 'pointer'}} 
+                            className={`px-3 bi ${light === 1 ? 'bi-moon' : 'bi-brightness-high'}`} 
+                            onClick={toggleLightMode}
+                        ></i>
                     </div>
                     
                     <Link style={{ textDecoration: 'none' }} to='/add-property'>

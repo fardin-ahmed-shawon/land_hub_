@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'; // Import React and useEffect
+import React, { useEffect, useState } from 'react'; // Import React and useEffect
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
 import './css/bootstrap.min.css';
@@ -20,7 +20,11 @@ import Properties from './Properties';
 import SearchProperties from './SearchProperties';
 
 function App() {
-  let light = 1;
+  // Initialize light from localStorage or default to 1
+  const [light, setLight] = useState(() => {
+    const storedLight = localStorage.getItem('light');
+    return storedLight ? parseInt(storedLight, 10) : 1;
+  });
 
   const DynamicStyles = () => {
     const location = useLocation(); // Detect route changes
@@ -96,8 +100,26 @@ function App() {
     return null;
   };
 
+  // Function to toggle light mode and save to localStorage
+  const toggleLightMode = () => {
+    const newLight = light === 1 ? 0 : 1;
+    setLight(newLight);
+    localStorage.setItem('light', newLight);
+  };
+
   return (
     <>
+      <i 
+      style={{
+        cursor: 'pointer',
+        position: 'absolute',
+        top: '10px',
+        right: '10px',
+        zIndex: 1000
+      }} 
+      className={`d-none px-3 bi ${light === 1 ? 'bi-moon' : 'bi-brightness-high'}`} 
+      onClick={toggleLightMode}
+    ></i>
       <Router>
         <DynamicStyles /> {/* Add the dynamic styles component */}
         <Routes>
