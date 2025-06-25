@@ -93,6 +93,10 @@ function App() {
           .footer .btn.btn-link {
             color: #000;
           }
+          .carousel-control-prev-icon,
+          .carousel-control-next-icon {
+              background: #000;
+          }
         `;
         document.head.appendChild(styleElement);
       }
