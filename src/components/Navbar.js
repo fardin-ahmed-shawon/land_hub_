@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from '../img/logo.png';
+import FAVICON from '../img/icon.png';
 import LOGODARK from '../img/logo-dark.png';
 
 function Navbar() {
@@ -24,6 +25,9 @@ function Navbar() {
 
     return (
       <>
+      <div id="loader">
+        <img src={FAVICON} alt="Loading..." />
+     </div>
         <div className="container-fluid nav-bar bg-transparent">
             <nav className="bg-transparent navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <Link style={{ textDecoration: 'none' }} to="/">
