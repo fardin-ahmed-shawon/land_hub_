@@ -40,7 +40,7 @@ function Navbar() {
       <div id="loader">
         <img src={FAVICON} alt="Loading..." />
      </div>
-        <div className="container-fluid nav-bar bg-transparent">
+        <div className="container-fluid nav-bar">
             <nav className="bg-transparent navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <Link style={{ textDecoration: 'none' }} to="/">
                     <a href="" className="navbar-brand d-flex align-items-center text-center">
