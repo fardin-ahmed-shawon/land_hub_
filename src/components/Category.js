@@ -64,7 +64,7 @@ function Category() {
                                     <div className="icon mb-3">
                                         <img className="img-fluid" src={category.img} alt="Icon" />
                                     </div>
-                                    <h6 className='bg-transparent ' style={{ color: '#fff' }}>{category.title}</h6>
+                                    <h6 className='bg-transparent '>{category.title}</h6>
                                     <span className='bg-transparent ' style={{ color: '#52AA5E' }}>{category.properties}</span>
                                 </div>
                             </a>

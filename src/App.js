@@ -33,6 +33,11 @@ function App() {
           element.classList.remove('bg-dark');
         });
 
+        const elements2 = document.querySelectorAll('.bg-transparent');
+        elements2.forEach(element => {
+          element.classList.remove('bg-transparent');
+        });
+
         const btn = document.querySelectorAll('.btn-dark');
         btn.forEach(element => {
           element.classList.remove('btn-dark');
@@ -41,6 +46,11 @@ function App() {
         const text = document.querySelectorAll('.text-white');
         text.forEach(element => {
           element.classList.remove('text-white');
+        });
+
+        const text5 = document.querySelectorAll('.text-white-50');
+        text5.forEach(element => {
+          element.classList.remove('text-white-50');
         });
 
         const text2 = document.querySelectorAll('.text-light');
@@ -59,6 +69,7 @@ function App() {
             color: var(--dark);
             font-weight: 500;
           }
+
           .form {
             background: #fff;
           }
@@ -66,7 +77,17 @@ function App() {
             color: #000;
           }
           .form a {
-              color: #52AA5E;
+            color: #52AA5E;
+          }
+          
+          .footer {
+            border-top: 5px solid #52AA5E;
+          }
+          .footer .copyright a {
+            color: #52AA5E;
+          }
+          .footer .btn.btn-link {
+            color: #000;
           }
         `;
         document.head.appendChild(styleElement);
