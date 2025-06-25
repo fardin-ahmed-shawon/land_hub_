@@ -35,8 +35,8 @@ function Navbar() {
                         <img className="img-fluid" src={LOGODARK} alt="Icon" style={{width: '180px'}} />
                     </a>
                 </Link> 
-                <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span className="navbar-toggler-icon"></span>
+                <button type="button" className="bg-light navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span className="bg-light navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto">
@@ -80,6 +80,11 @@ function Navbar() {
                         <Link style={{ textDecoration: 'none' }} to='/contact'>
                             <a href="" className="text-light nav-item nav-link">Contact</a>
                         </Link>
+                    </div>
+
+                    <div>
+                        <i style={{cursor: 'pointer'}} class="px-3 bi bi-moon"></i>
+                        {/* <i style={{cursor: 'pointer'}} class="px-3 bi bi-brightness-high"></i> */}
                     </div>
                     
                     <Link style={{ textDecoration: 'none' }} to='/add-property'>
