@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import IMG1 from '../img/property-1.jpg';
 import IMG2 from '../img/property-2.jpg';
 import IMG3 from '../img/property-3.jpg';
@@ -5,16 +7,23 @@ import IMG4 from '../img/property-4.jpg';
 import IMG5 from '../img/property-5.jpg';
 import IMG6 from '../img/property-6.jpg';
 
-import DarkLogo from '../img/logo-dark.png';
+import LOGO from '../img/logo.png';
+import LOGODARK from '../img/logo-dark.png';
 
 function Footer() {
+
+    const [light, setLight] = useState(() => {
+        const storedLight = localStorage.getItem('light');
+        return storedLight ? parseInt(storedLight, 10) : 1; // Default to 1 if no value in localStorage
+    });
+
     return (
       <>
         <div className="container-fluid bg-dark text-white-50 footer pt-1" data-wow-delay="0.1s">
             <div className="container py-5">
                 <div className="row g-5">
                     <div className="col-lg-3 col-md-6">
-                        <img style={{width: '150px'}} src={DarkLogo} alt="" />
+                        <img style={{width: '150px'}} src={light === 1 ? LOGO : LOGODARK} alt="" />
                         <br/><br/>
                         <h5 className="text-white mb-4">Get In Touch</h5>
                         

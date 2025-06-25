@@ -44,7 +44,7 @@ function Navbar() {
             <nav className="bg-transparent navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
                 <Link style={{ textDecoration: 'none' }} to="/">
                     <a href="" className="navbar-brand d-flex align-items-center text-center">
-                        <img className="img-fluid" src={LOGODARK} alt="Icon" style={{width: '180px'}} />
+                        <img className="img-fluid" src={light === 1 ? LOGO : LOGODARK} alt="Icon" style={{width: '180px'}} />
                     </a>
                 </Link> 
                 <button type="button" className="bg-light navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -107,7 +107,7 @@ function Navbar() {
                     </Link>
 
                     <Link style={{ textDecoration: 'none' }} to='/login'>
-                        <a href="" style={{backgroundColor: '#52AA5E', color: '#fff'}} className="btn px-3 py-2  mx-3 d-none d-lg-flex"><b>Account</b> <i className="px-1 bi bi-person"></i></a>
+                        <a href="" style={{backgroundColor: '#52AA5E', color: '#fff'}} className="btn px-3 py-2  mx-3 d-none d-lg-flex"><b className='acc-title'>Account</b> <i className="px-1 bi bi-person"></i></a>
                     </Link>
                 </div>
             </nav>

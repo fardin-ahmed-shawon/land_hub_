@@ -1,10 +1,11 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import LOGO from './img/logo.png';
 import LOGODARK from './img/logo-dark.png';
 
 import './css/style.css';
 import './css/login.css';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const container = {
   height: '100vh',
@@ -28,6 +29,12 @@ function Login() {
     setIsSignup(!isSignup);
   };
 
+
+  const [light, setLight] = useState(() => {
+      const storedLight = localStorage.getItem('light');
+      return storedLight ? parseInt(storedLight, 10) : 1; // Default to 1 if no value in localStorage
+  });
+
   return (
     <>
       <section style={container} className={`container forms ${isSignup ? 'show-signup' : ''}`}>
@@ -38,7 +45,7 @@ function Login() {
             
             <Link to='/'>
               <a href="">
-                <img style={{ width: '150px' }} src={LOGODARK} alt="" />
+                <img style={{ width: '150px' }} src={light === 1 ? LOGO : LOGODARK} alt="" />
               </a>
             </Link>
 
@@ -84,7 +91,7 @@ function Login() {
 
             <Link to='/'>
               <a href="">
-                <img style={{ width: '150px' }} src={LOGODARK} alt="" />
+                <img style={{ width: '150px' }} src={light === 1 ? LOGO : LOGODARK} alt="" />
               </a>
             </Link>  
 

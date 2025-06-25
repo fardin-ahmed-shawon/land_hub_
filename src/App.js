@@ -97,6 +97,10 @@ function App() {
           .carousel-control-next-icon {
               background: #000;
           }
+
+          .acc-title, .bi-person {
+            color: #fff;
+          }
         `;
         document.head.appendChild(styleElement);
       }
