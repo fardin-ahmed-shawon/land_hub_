@@ -7,16 +7,16 @@ function SearchBar() {
                     <div className="bg-dark row py-3">
                         <div className="col-md-10 bg-dark">
                             <div className="row g-2 bg-transparent">
-                                <div className="col-md-4">
-                                    <select className="form-select border-0 py-3">
+                                <div className="col-md-4 bg-dark">
+                                    <select className="form-select py-3">
                                         <option selected>Price Range</option>
                                         <option value="1">$20000 - $50000</option>
                                         <option value="2">$60000- $150000</option>
                                         <option value="3">$200000- $800000</option>
                                     </select>
                                 </div>
-                                <div className="col-md-4">
-                                    <select className="form-select border-0 py-3">
+                                <div className="col-md-4 bg-dark">
+                                    <select className="form-select py-3">
                                         <option selected>Choose Property Type</option>
                                         <option value="1">Land</option>
                                         <option value="2">Vila</option>
@@ -24,8 +24,8 @@ function SearchBar() {
                                         <option value="4">Apartment</option>
                                     </select>
                                 </div>
-                                <div className="col-md-4">
-                                    <select className="form-select border-0 py-3">
+                                <div className="col-md-4 bg-dark">
+                                    <select className="form-select py-3">
                                         <option selected>Select Your City</option>
                                         <option value="1">San Fransico</option>
                                         <option value="2">Stockholm</option>
